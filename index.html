@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .gd {
+        background-color: antiquewhite;
+        padding: 20px;
+        display: grid;
+
+        /*grid-template-columns: repeat(auto-fill, minmax(200px, 250px));*/
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+      }
+      .item1 {
+        background-color: aliceblue;
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      .item2 {
+        background-color: rgb(52, 179, 179);
+        grid-row: 2/4;
+      }
+      .item3 {
+        background-color: red;
+        grid-column: 2/4;
+      }
+      .item4 {
+        background-color: gray;
+        grid-column: 2/4;
+      }
+      .item5 {
+        background-color: green;
+        grid-row: 2/4;
+        grid-column-start: 4;
+      }
+      .item6 {
+        background-color: blue;
+        grid-column: 1/5;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gd">
+      <div class="item1">
+        <img
+          src="https://worldalpinetreks.com/uploads/2023/07/where-is-mount-everest.jpg"
+          alt=""
+        />1
+      </div>
+      <div class="item2">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/D9bzCVeZLHQnZ6bUWvAkrW.jpg"
+          alt=""
+        />2
+      </div>
+      <div class="item3">
+        <img
+          src="https://cdn.britannica.com/39/76239-050-DE5FCF36/Climbers-side-Nepali-Mount-Everest.jpg"
+          alt=""
+        />3
+      </div>
+      <div class="item4">
+        <img
+          src="https://www.adventurealternative.com/wp-content/uploads/2024/07/nepal_everest-final-section-of-summit-ridge-cornice-1-1.jpg.webp"
+          alt=""
+        />4
+      </div>
+      <div class="item5">
+        <img
+          src="https://preview.redd.it/climbing-mount-everest-the-queue-at-khumbu-icefall-v0-yr6t49f9o0ea1.jpg?width=1080&crop=smart&auto=webp&s=713527d755acfab0aa8329de756bd4fb36271990"
+          alt=""
+        />5
+      </div>
+      <div class="item6">
+        <img
+          src="https://c.files.bbci.co.uk/15689/production/_107098678_mediaitem107098677.jpg"
+          alt=""
+        />6
+      </div>
+    </div>
+  </body>
+</html>
